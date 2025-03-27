@@ -130,22 +130,22 @@ LLM output is fuzzy. Define quality like this:
 
 ```python
 import os
+
 from openai import OpenAI
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(
+    api_key=os.environ.get("OPENAI_API_KEY"),
+)
 
 response = client.chat.completions.create(
-  messages=[
-    {
-      "content": "You are a concise technical writer.",
-      "role": "system"
-    },
-    {
-      "content": "Explain what a vector database is in simple terms.",
-      "role": "user"
-    }
-  ],
-  model="gpt-4",
+    model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "You are a concise technical writer."},
+        {
+            "role": "user",
+            "content": "Explain what a vector database is in simple terms.",
+        },
+    ],
 )
 
 print(response.choices[0].message.content)
