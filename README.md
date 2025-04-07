@@ -96,6 +96,31 @@ Day 1:
 
 ---
 
+## Mindsets That Scale
+
+The best results come when you treat LLMs as tools that **augment your thinking**, not replace it.
+
+### 1. Use AI for Fast, Focused Tasks
+
+AI thrives when the task is something a human could do in a second or two — things like renaming files, summarizing short content, or generating scaffolding. Don’t force it to solve problems that are too vague or complex. **Break hard problems into small, clear ones.** That’s when AI shines.
+
+> _This is aligned with Andrew Ng’s “One-Second Rule” — tasks that a human can perform in under one second are great candidates for automation._
+
+### 2. Prioritize Accuracy, But Accept Imperfection
+
+When you evaluate a model's performance, **accuracy is key** — but perfect accuracy is not realistic. Ambiguity, nuance, and subjectivity are baked into language. Instead of aiming for 100%, aim for **consistent and explainable behavior**, and iterate. Treat errors as feedback loops, not failures.  
+_(In practice, many real-world tasks operate safely with 70–90% accuracy — just make sure you know your risk tolerance.)_
+
+> _Andrew Ng emphasizes setting high but achievable accuracy standards, and treating improvement as an ongoing process._
+
+### 3. You and the LLM Are Partners
+
+Don't outsource your learning. Let the LLM **guide, question, and collaborate** — not do everything for you. Ask it for scaffolding, instructions, or alternatives, then build it yourself. That way, you stay in control and deepen your understanding. **If you can't maintain the code later, you're not really building.**
+
+> _Experts recommend a human-in-the-loop mindset where you learn with the AI, not through it._
+
+---
+
 ## Evaluation Principles
 
 LLM output is fuzzy. Define quality like this:
