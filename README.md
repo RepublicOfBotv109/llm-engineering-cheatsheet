@@ -60,6 +60,17 @@ Ask for output formats explicitly.
 
 ---
 
+### Sampling Controls
+
+You can guide creativity by adjusting temperature:
+
+- `temperature=0.0` → strict, factual, low variability
+- `temperature=1.0` → creative, diverse, high variability
+
+Use `top_p` for more granular control of randomness.
+
+---
+
 ## Prompt Structure: The Anatomy
 
 Always structure prompts with these components:
@@ -93,6 +104,8 @@ Day 1:
 - Use **summarization** for long chat histories
 - Drop irrelevant history when possible
 - **Explicit > implicit** — don't assume the model remembers everything
+- Fewer tokens = faster responses and lower cost
+- Use tools like [OpenAI Tokenizer](https://platform.openai.com/tokenizer) to inspect prompt size
 
 ---
 
@@ -130,6 +143,11 @@ LLM output is fuzzy. Define quality like this:
 - Would a human say it's **reasonable**?
 - Can you detect regressions with **A/B comparisons**?
 
+### Perspective Shift
+
+Most LLM apps don’t need 100% accuracy.\
+**Reliable > perfect.** Iterate like a product, not like a test.
+
 ---
 
 ## Common Failure Modes
@@ -140,6 +158,24 @@ LLM output is fuzzy. Define quality like this:
 | Repetition      | Poor constraint or unclear output format |
 | Refusal         | Misalignment between task and role       |
 | Loss of context | Too much history or poor summarization   |
+
+---
+
+## Debugging Checklist (When Output Fails)
+
+- ❓ Is the **task clearly stated**?
+- 🧩 Are you using the right **prompting pattern**?
+- 🧠 Is there a clear **role and structure**?
+- 🧱 Could the context window be too full?
+- 📣 Try asking the model: _“Why did you respond this way?”_
+
+---
+
+## Structured Output & Tool Use (Advanced)
+
+Some models support **function calling** or **structured tool use** — great for API responses or JSON output.
+
+> Example: OpenAI’s `function_call` or `response_format="json"`
 
 ---
 
@@ -171,6 +207,7 @@ response = client.chat.completions.create(
             "content": "Explain what a vector database is in simple terms.",
         },
     ],
+    temperature=0.3,  # Lower = more deterministic
 )
 
 print(response.choices[0].message.content)
