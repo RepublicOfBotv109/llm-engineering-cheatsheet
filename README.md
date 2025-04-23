@@ -145,7 +145,7 @@ LLM output is fuzzy. Define quality like this:
 
 ### Perspective Shift
 
-Most LLM apps don’t need 100% accuracy.\
+LLM success isn’t about perfection — it’s about clarity, consistency, and feedback loops.\
 **Reliable > perfect.** Iterate like a product, not like a test.
 
 ---
